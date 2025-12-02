@@ -1,8 +1,8 @@
 # Smart Study Planner (AI Powered)
 
-This is an AI-powered study planning web application that helps students organize tasks, generate smart schedules, track progress, and identify their most productive study hours using Machine Learning.
+This is an AI-powered study planning web application that helps users organize tasks, generate smart schedules, track progress, and identify their most productive study hours using Machine Learning.
 
-The project demonstrates full-stack development, ML integration, database design, and a clean modern interface. Suitable for resumes and internship applications such as Google STEP.
+The project demonstrates full-stack development, ML integration, database design, and a clean modern interface.
 
 ---
 
@@ -15,21 +15,19 @@ The project demonstrates full-stack development, ML integration, database design
 ## Features
 
 ### Task Management
-- Add tasks with name, deadline, and difficulty
-- Automatically generated priority score
-- Simple, clean user interface
+- Add tasks with name, deadline, and difficulty  
+- Automatically generated priority score  
+- Simple, clean user interface  
 
 ### Smart Scheduling Algorithm
 Tasks are prioritized based on:
 - Deadline urgency  
-- Difficulty of task  
+- Difficulty  
 
 Priority formula:
 priority = difficulty × urgency
 urgency = max(1, 10 - days_left)
 
-markdown
-Copy code
 
 ### Progress Tracking
 - Mark tasks as completed  
@@ -42,7 +40,6 @@ Copy code
 ### Modern Interface
 - Clean layout  
 - Easy navigation  
-- Practical for real use  
 
 ---
 
@@ -68,6 +65,8 @@ Copy code
 
 ## Project Structure
 
+
+
 smart-study-planner/
 │
 ├── app.py # Flask backend
@@ -78,54 +77,48 @@ smart-study-planner/
 │
 ├── static/
 │ ├── style.css # Stylesheet
-│ └── script.js # JavaScript logic
+│ └── script.js # Frontend logic
 │
 └── templates/
-└── index.html # Frontend UI
+└── index.html # Main UI
 
-yaml
-Copy code
 
 ---
 
 ## How to Run Locally
 
 1. Install dependencies:
+
+
 pip install flask pandas numpy scikit-learn
 
-markdown
-Copy code
 
 2. Create the database:
+
+
 python create_db.py
 
-markdown
-Copy code
 
 3. Start the server:
+
+
 python app.py
 
-markdown
-Copy code
 
 4. Open in browser:
-http://127.0.0.1:5000/
 
-yaml
-Copy code
 
 ---
 
-## Future Improvements
+## Future Enhancements
 - User login system  
 - Edit/Delete tasks  
 - Calendar view  
-- Notifications and reminders  
+- Notifications  
 - Dark mode  
-- Deployment on Render or Vercel  
+- Cloud deployment  
 
 ---
 
 ## Author
 Ruhanika  
-
