@@ -1,45 +1,52 @@
-# smart-study-planner
-AI Powered Smart Study Planner
-# 📚 Smart Study Planner (AI-Powered)
+# Smart Study Planner (AI Powered)
 
-An AI-powered study planning web application that helps students organize tasks, generate smart schedules, track progress, and understand their most productive study hours using **Machine Learning**.
+This is an AI-powered study planning web application that helps students organize tasks, generate smart schedules, track progress, and identify their most productive study hours using Machine Learning.
 
-This project demonstrates **full-stack development**, **AI/ML integration**, **database design**, and a **clean modern UI** — perfect for internship applications like **Google STEP**.
+The project demonstrates full-stack development, ML integration, database design, and a clean modern interface. Suitable for resumes and internship applications such as Google STEP.
 
 ---
 
-## 🚀 Features
+## UI Screenshot
 
-### 🔹 Task Management
-- Add tasks with name, deadline, and difficulty  
-- Automatically computed priority score  
-- Clean, card-based UI  
+![UI Screenshot](https://raw.githubusercontent.com/RuhanikaChotwani/smart-study-planner/main/Screenshot%202025-12-03%20043503.png)
 
-### 🔹 Smart Scheduling Algorithm
-Tasks are ordered using:
+---
+
+## Features
+
+### Task Management
+- Add tasks with name, deadline, and difficulty
+- Automatically generated priority score
+- Simple, clean user interface
+
+### Smart Scheduling Algorithm
+Tasks are prioritized based on:
 - Deadline urgency  
-- Difficulty weight  
-- Priority formula:  
+- Difficulty of task  
+
+Priority formula:
 priority = difficulty × urgency
 urgency = max(1, 10 - days_left)
 
+markdown
+Copy code
 
-### 🔹 Progress Tracking
+### Progress Tracking
 - Mark tasks as completed  
-- Live progress bar updates automatically  
+- Progress bar updates automatically  
 
-### 🔹 Machine Learning Insight
-- Uses Linear Regression on completion logs  
-- Predicts **your most productive study hour**  
+### Machine Learning Insight
+- Uses Linear Regression on task completion logs  
+- Predicts the user's most productive study hour  
 
-### 🔹 Modern UI
-- Clean responsive cards  
-- Easy to navigate  
-- Suitable for real use  
+### Modern Interface
+- Clean layout  
+- Easy navigation  
+- Practical for real use  
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 **Frontend:**  
 - HTML  
@@ -47,7 +54,7 @@ urgency = max(1, 10 - days_left)
 - JavaScript  
 
 **Backend:**  
-- Python (Flask)  
+- Python (Flask)
 
 **Database:**  
 - SQLite  
@@ -59,41 +66,66 @@ urgency = max(1, 10 - days_left)
 
 ---
 
-## 📂 Folder Structure
+## Project Structure
 
-
-
-study_planner_app/
+smart-study-planner/
 │
 ├── app.py # Flask backend
 ├── scheduler.py # Scheduling algorithm
-├── ml_model.py # ML model for productive hour
-├── create_db.py # Database creator
+├── ml_model.py # ML model for predicting productive hour
+├── create_db.py # Database creation script
 ├── database.db # SQLite database
 │
 ├── static/
-│ ├── style.css # Styling
-│ └── script.js # JS logic
+│ ├── style.css # Stylesheet
+│ └── script.js # JavaScript logic
 │
 └── templates/
-└── index.html # Main UI
+└── index.html # Frontend UI
 
+yaml
+Copy code
 
 ---
 
 ## How to Run Locally
 
-### 1 Install dependencies
-```bash
+1. Install dependencies:
 pip install flask pandas numpy scikit-learn
 
-2 Create database
+markdown
+Copy code
+
+2. Create the database:
 python create_db.py
 
-3 Start the server
+markdown
+Copy code
+
+3. Start the server:
 python app.py
 
-4 Open in browser
+markdown
+Copy code
 
-![UI Screenshot](https://raw.githubusercontent.com/RuhanikaChotwani/smart-study-planner/main/Screenshot%202025-12-03%20043503.png)
+4. Open in browser:
+http://127.0.0.1:5000/
+
+yaml
+Copy code
+
+---
+
+## Future Improvements
+- User login system  
+- Edit/Delete tasks  
+- Calendar view  
+- Notifications and reminders  
+- Dark mode  
+- Deployment on Render or Vercel  
+
+---
+
+## Author
+Ruhanika  
 
