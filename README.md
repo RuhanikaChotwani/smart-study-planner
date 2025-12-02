@@ -95,4 +95,5 @@ python app.py
 
 4 Open in browser
 
-![App Screenshot](https://github.com/user-attachments/assets/6f2819f1-7ae1-4bfe-a4c7-3d03f362d4e6)
+![UI Screenshot](https://raw.githubusercontent.com/RuhanikaChotwani/smart-study-planner/main/Screenshot%202025-12-03%20043503.png)
+
