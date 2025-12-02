@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Study Planner</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1 class="title">📚 Smart Study Planner</h1>
+
+<div class="container">
+
+    <!-- Add Task Card -->
+    <div class="card">
+        <h2>Add New Task</h2>
+
+        <input id="task" placeholder="Task name">
+        <input id="deadline" type="date">
+        <input id="difficulty" type="number" min="1" max="5" placeholder="Difficulty (1–5)">
+
+        <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <!-- Schedule Card -->
+    <div class="card">
+        <h2>Your Study Schedule</h2>
+        <button onclick="getSchedule()">Generate Schedule</button>
+
+        <div id="progress"></div>
+
+        <div id="schedule"></div>
+    </div>
+
+    <!-- ML Prediction Card -->
+    <div class="card">
+        <h2>Your Productive Hour</h2>
+        <button onclick="getBestHour()">Show Prediction</button>
+        <p id="best-hour"></p>
+    </div>
+
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
